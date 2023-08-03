@@ -1,0 +1,1160 @@
+body {
+  background-color: rgb(240, 240, 240);
+  color: rgb(244, 244, 244);
+}
+
+@font-face {
+  font-family: beldaFont;
+  src: url(./fonts/Belda-Font/Belda-Font/insigne\ -\ Belda\ Norm\ Regular.otf);
+}
+
+@font-face {
+  font-family: roasheFont;
+  src: url(./fonts/roashe/Roashe.ttf);
+}
+
+@font-face {
+  font-family: kindelFont;
+  src: url(./fonts/kindel/Kindel_PersonalUse.otf);
+}
+
+@font-face {
+  font-family: cremonaFont;
+  src: url(./fonts/cremona/Cremona\ Regular\ TTF.ttf);
+}
+
+@font-face {
+  font-family: highfield;
+  src: url(./fonts/Highfield/Highfield\ Thin.ttf);
+}
+
+@font-face {
+  font-family: highfieldi;
+  src: url(./fonts/Highfield/Highfield\ Thin\ Italic.ttf);
+}
+
+@font-face{
+  font-family: nympha;
+  src:url(./fonts/nympha/OTF/NymphaTrial-Light.otf)
+}
+
+#nav {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+
+}
+
+.sidebar{
+  background-color: #1c1d25;
+  color: white;
+}
+
+#header-main {
+  background-color: #1c1d25;
+  display: flex;
+  height: 760px;
+  flex-direction: column;
+  position: relative;
+}
+
+#res-img {
+  max-height: 150px;
+  max-width: 150px;
+  overflow: hidden;
+
+}
+
+.svg-icon{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  height: 300px;
+  width: 300px;
+  top: 24%;
+  bottom: 50%;
+  left: 60%;
+  right: 30%;
+  opacity: 0.5;
+  fill: #89b3ff;
+}
+
+.nav-con{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+.nav-start{
+  border: solid;
+  border-width: .4px;
+  margin: 0;
+  padding: 10;
+  color: #f55c54;
+  content: "";
+  fill: none;
+}
+
+#abt-button1{
+  display: flex;
+}
+
+#abt-button{
+  display: none;
+}
+.down-res-web {
+  display: flex;
+  /* flex: 1 0 100%; */
+  flex-direction: row-reverse;
+}
+
+.cont-banner-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-headings-main {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+#cont-head-name {
+  font-size: 70px;
+  margin-left: 140px;
+  font-family: 'League Spartan', sans-serif;
+}
+#cont-proffession {
+  margin-left: 140px;
+  font-size: 18px;
+  margin-top: 0px;
+  font-style: italic;
+  text-transform: capitalize;
+  font-family: "Times New Roman";
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cont-btn-abt {
+  overflow: hidden;
+  position: relative;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 140px;
+  margin-top: 25px;
+  height: 47px;
+  width: 130px;
+  background: linear-gradient(to left, #f55c54, #fd3419);
+}
+
+.cont-btn-abt::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  top: 0;
+  right: 200px;
+  background-color: #235aa6;
+  transition: all 0.3s ease-out;
+
+}
+.cont-btn-abt:hover::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right:-50px;
+  background-color: #235aa6;
+}
+.cont-btn-abt::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  top: 0;
+  right: 200px;
+  background-color: rgb(0, 75, 145);
+  transition: all .3s ease-in;
+}
+.cont-btn-abt:hover::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: -50px;
+  background-color: rgb(0, 75, 145);
+
+}
+
+.btn-text{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "League Spartan",Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 0%;
+  right: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+
+}
+
+.svg-tri{
+  position: absolute;
+  color: #ff0;
+  top: 100px;
+  left: 300px;
+  height: 20px;
+  width: 20px;
+}
+
+.svg-tri2{
+  position: absolute;
+  color: #f06449;
+  top: 190px;
+  right: 700px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(180deg);
+}
+
+.svg-tri4{
+  position: absolute;
+  color: #f06449;
+  top: 490px;
+  right: 100px;
+  height: 30px;
+  width: 30px;
+  transform: rotate(220deg);
+}
+
+.svg-tri5{
+  position: absolute;
+  color: #ff0;
+  top: 600px;
+  left: 50px;
+  height: 40px;
+  width: 40px;
+  transform: rotate(180deg);
+}
+.svg-tri3{
+  position: absolute;
+  color: aqua;
+  top: 600px;
+  right: 800px;
+  height: 30px;
+  width: 30px;
+  transform: rotate(140deg);
+}
+.svg-cur1{
+  position: absolute;
+  color: aqua;
+  top: 300px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(50deg);
+}
+
+.svg-cur2{
+  position: absolute;
+  color: #f06449;
+  top: 500px;
+  left: 410px;
+  height: 40px;
+  width: 40px;
+  transform: rotate(140deg);
+}
+
+.svg-cur3{
+  position: absolute;
+  color: #ff0;
+  top: 500px;
+  left: 1110px;
+  height: 40px;
+  width: 40px;
+  transform: rotate(140deg);
+}
+
+#soc-icons-div {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 210px;
+  flex: auto;
+}
+
+.soc-icons-div-div {
+  margin-right: 40px;
+  size: "small";
+}
+
+.about{
+  font-family: 'League Spartan','Arial','sans-serif';
+  font-size: 28px;
+}
+
+.abt-cont-2{
+  height: 90%;
+  width: 40%;
+  top: 4%;
+  left: 8%;
+}
+.abt-cont-1{
+  height: 90%;
+  width: 40%;
+  top: 4%;
+  left: 48%;
+}
+
+.abt-proff{
+  font-family: beldaFont;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.abt-para{
+  font-family: beldaFont;
+  color: #1c1d25;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.abt-para span{
+  color: #f06449;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.label{
+  font-family: 'League Spartan', sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  background-color: transparent;
+  border: solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  border-bottom-color: aliceblue;
+  color: white;
+  margin-top: 10px;
+  position: relative;
+}
+
+
+
+
+.input:focus{
+  background-color: transparent;
+  outline: none;
+  border: solid;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(248, 91, 12);
+
+}
+
+.svg-abt-small{
+ height: 60px;
+ width: 60px; 
+}
+
+.white-con{
+  margin-left: 50px;
+}
+
+
+#title-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: rgb(145, 144, 144);
+}
+
+#title-lw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(81, 80, 80);
+}
+
+#project-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-set {
+  box-shadow: 0px 0px 50px 0.5px rgb(122, 122, 122);
+  z-index: 1;
+}
+
+.project-set-img {
+  height: auto;
+  width: 900px;
+  background-color: aquamarine;
+  overflow: auto;
+  z-index: 2;
+  opacity: 1;
+  object-fit: cover;
+  inset: 10;
+}
+
+.pro-img-cover {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0%;
+  bottom: 0;
+  background-color: #1c1d25;
+  opacity: 0.6;
+}
+
+.pro-img-cover2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to left, #101b3b,#235aa6 );
+  opacity: 0.8;
+  animation-name: proanime2;
+  animation-duration: 450ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.pro-img-cover3 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to left, #101b3b,#235aa6 );
+  opacity: 0.7;
+  animation-name: proanime;
+  animation-duration: 450ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes proanime2 {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes proanime {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0%;
+  }
+  /* 0% { right: 100%;}
+  10% { right: 90%;}
+  20% { right: 80%;}
+  30% { right: 70%;}
+  40% { right: 60%;}
+  50% { right: 50%;}
+  60% { right: 40%;}
+  70% { right: 30%;}
+  80% { right: 20%;}
+  90% { right: 10%;}
+  100% { right: 0%;} */
+}
+
+.pro-sub-div {
+  position: relative;
+  margin: 90px;
+}
+
+.pro-num {
+  position: absolute;
+  top: -75px;
+  left: -10px;
+  font-size: 160px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  pointer-events: none;
+}
+
+.pro-name {
+  position: absolute;
+  bottom: 120px;
+  right: 20px;
+  font-size: 70px;
+  font-family: 'League Spartan','Arial','sans-serif';
+  color: rgb(255, 255, 255);
+  pointer-events: none;
+  animation-name: proname2;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.pro-name2 {
+  position: absolute;
+  bottom: 120px;
+  right: 20px;
+  font-size: 72px;
+  font-family: 'League Spartan','Arial','sans-serif';
+  color: rgb(255, 255, 255);
+  pointer-events: none;
+  animation-name: proname;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes proname2 {
+  from {
+    font-size: 72px;
+  }
+  to {
+    font-size: 70px;
+  }
+}
+
+@keyframes proname {
+  from {
+    font-size: 70px;
+  }
+  to {
+    font-size: 72px;
+  }
+}
+
+.pro-desc {
+  position: absolute;
+  font-size: 17px;
+  font-family: beldaFont;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  bottom: 90px;
+  right: 20px;
+  pointer-events: none;
+  text-align: right;
+  width: 90%;
+  animation-name: prodesc2;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+.pro-desc2 {
+  position: absolute;
+  font-style: italic;
+  font-size: 18px;
+  font-family: beldaFont;
+  color: rgb(255, 255, 255);
+  bottom: 90px;
+  right: 20px;
+  pointer-events: none;
+  animation-name: prodesc;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes prodesc {
+  from {
+    font-size: 17px;
+  }
+  to {
+    font-size: 18px;
+  }
+}
+
+@keyframes prodesc2 {
+  from {
+    font-size: 18px;
+  }
+  to {
+    font-size: 17px;
+  }
+}
+
+.pro-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 120px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: 'League Spartan','Arial','sans-serif';
+  font-style: normal;
+  background: linear-gradient(to left, #f55c54, #fd3419);
+  color: rgb(241, 241, 241);
+  border: none;
+  overflow: hidden;
+}
+
+.pro-btn::before{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  top: 0;
+  right: 200px;
+  background-color: #235aa6;
+  transition: all 0.3s ease-out;
+}
+
+.pro-btn:hover::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right:-50px;
+  background-color: #235aa6;
+}
+.pro-btn::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  top: 0;
+  right: 200px;
+  background-color: rgb(0, 75, 145);
+  transition: all .3s ease-in;
+}
+.pro-btn:hover::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: -50px;
+  background-color: rgb(0, 75, 145);
+
+}
+
+
+#experiments-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.exp-sub-div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  margin: 0.2px;
+  padding-top: 30px;
+  height: 330px;
+  background-color: white;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.7s ease;
+}
+
+.exp-sub-div:hover {
+  background-color: #f5d6d2;
+  cursor: pointer;
+
+}
+
+#exp-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#exp-img img {
+  height: 200px;
+  width: 200px;
+  border: solid;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+}
+
+#exp-tit{
+  font-family: "montserrat",serif;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
+
+#exp-tit-name {
+  font-family: "montserrat",serif;
+  display: flex;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 100;
+  color: rgb(88, 88, 88);
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1d25;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+#foot-soc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#foot-soc div {
+  margin: 10px;
+}
+
+.soc-text{
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.small-svg{
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+
+#copyrights{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(203, 203, 203);
+}
+
+
+@media (max-width: 500px) {
+  #res-img {
+    height: 100px;
+  }
+
+  #cont-head-name {
+    font-size: 35px;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+
+  #cont-proffession {
+    margin-left: 30px;
+    font-size: 10px;
+    margin-top: 0px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: "Times New Roman";
+  }
+
+  .cont-btn-abt {
+    margin-left: 30px;
+    font-family: "League Spartan",Arial, Helvetica, sans-serif;
+  }
+
+  .project-set-img {
+    width: 330px;
+    height: 270px;
+  }
+
+  .nav-brand-svg{
+    height: 20px;
+    width: 20px;
+  }
+
+  .pro-name {
+    font-size: 32px;
+    bottom: 90px;
+    animation-name: proname;
+    animation-duration: 250ms;
+    animation-iteration-count: 0;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pro-name2 {
+    font-size: 32px;
+    bottom: 90px;
+    animation-name: proname;
+    animation-duration: 250ms;
+    animation-iteration-count: 0;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pro-desc {
+    font-size: 14px;
+    bottom: 70px;
+    pointer-events: none;
+    animation-name: prodesc2;
+    animation-duration: 250ms;
+    animation-iteration-count: 0;
+    animation-timing-function: ease-in-out;
+  }
+  .pro-desc2 {
+    font-size: 14px;
+    bottom: 70px;
+    pointer-events: none;
+    animation-name: prodesc2;
+    animation-duration: 250ms;
+    animation-iteration-count: 0;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pro-btn {
+    height: 40px;
+    width: 100px;
+    font-size: 19px;
+  }
+
+  .pro-sub-div {
+    margin-top: 50px;
+  }
+
+  .pro-num {
+    font-size: 100px;
+    top: -40px;
+  }
+
+  #experiments-div{
+    flex-direction: column;
+  }
+
+  .svg-icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 300px;
+    width: 300px;
+    top: 24%;
+    bottom: 50%;
+    left: 10%;
+    opacity: 0.1;
+  }
+  .svg-tri{
+    position: absolute;
+    color: #ff0;
+    top: 100px;
+    left: 100px;
+    height: 30px;
+    width: 30px;
+    opacity: 0.6;
+  }
+  .svg-tri2{
+    position: absolute;
+    color: #f06449;
+    top: 160px;
+    right: 100px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(180deg);
+    opacity: 0.6;
+  }
+  .svg-tri3{
+    position: absolute;
+    color: aqua;
+    top: 500px;
+    right: 100px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(140deg);
+  }
+  .svg-cur1{
+    position: absolute;
+    color: #ff0;
+    top: 300px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(50deg);
+    opacity: 0.6;
+  }
+
+  .svg-cur2{
+    position: absolute;
+    color: #f06449;
+    top: 500px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    transform: rotate(140deg);
+    opacity: 0.6;
+  }
+  .svg-tri4{
+    position: absolute;
+    color: #f06449;
+    top: 490px;
+    right: 100px;
+    height: 0px;
+    width: 0px;
+    transform: rotate(220deg);
+    opacity: 0.6;
+  }
+  
+  .svg-tri5{
+    position: absolute;
+    color: #ff0;
+    top: 600px;
+    left: 50px;
+    height: 0px;
+    width: 0px;
+    transform: rotate(180deg);
+    opacity: 0.6;
+  }
+  .svg-cur3{
+    position: absolute;
+    color: #ff0;
+    top: 500px;
+    left: 1110px;
+    height: 0px;
+    width: 0px;
+    transform: rotate(140deg);
+  }
+  .soc-text{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+  }
+  
+  .small-svg{
+    height: 30px;
+    width: 30px;
+    fill: white;
+  }
+
+  .abt-cont-2{
+    height: 500px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+  }
+  .abt-cont-1{
+    height: 600px;
+    width: 100%;
+    top: 500px;
+    left: 0%;
+  }
+
+  
+  .white-con{
+    margin-left: 20px;
+  }
+  .abt-proff{
+    font-family: beldaFont;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .abt-para{
+    font-family: beldaFont;
+    color: #1c1d25;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  
+  .svg-abt-small{
+    height: 40px;
+    width: 40px;
+  }
+  .about{
+    font-size: 25px;
+  }
+  .abt-para span{
+    color: #f06449;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  #abt-button1{
+    display: none;
+  }
+
+  #abt-button{
+    display: flex;
+  }
+
+}
+
+/* .naked-eye {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  animation: myframe3;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  
+  z-index: -1;
+  position: relative;
+}
+.eye {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  animation: myframe1;
+  animation-duration: 8s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  
+}
+
+.lash-1 {
+  height: 75px;
+  width: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 7px;
+  margin-right: 80px;
+  transform: rotate(160deg);
+}
+
+.lash-2 {
+  height: 75px;
+  width: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 7px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
+.lash-3 {
+  height: 75px;
+  width: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 7px;
+  transform: rotate(20deg);
+}
+.lash-div {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+}
+.eye-lid {
+  position: absolute;
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  
+  animation: myframe2;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes myframe1 {
+  0% {
+    margin-bottom: 100px;
+  }
+  50% {
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-bottom: 100px;
+  }
+}
+
+@keyframes myframe2 {
+  0% {
+    width: 100px;
+    height: 100px;
+    left: 70px;
+  }
+  10% {
+    width: 100px;
+    height: 100px;
+    left: 70px;
+    
+  }
+  20% {
+    width: 100px;
+    height: 100px;
+    left: 70px;
+  }
+  30% {
+    width: 100px;
+    height: 100px;
+    left: 70px;
+    bottom: 25px;
+  }
+  40% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 100px;
+    height: 100px;
+    right: 70px;
+  }
+  60% {
+    width: 100px;
+    height: 100px;
+    right: 70px;
+    top: 25px;
+  }
+  70% {
+    width: 100px;
+    height: 100px;
+    right: 70px;
+    bottom: 25px;
+  }
+  80% {
+    width: 100px;
+    height: 100px;
+  }
+} */
